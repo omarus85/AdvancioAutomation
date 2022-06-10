@@ -6,7 +6,7 @@ try{
     const runner = testcafe.createRunner();
 
     const failedCount = await runner
-    .src(["./Tests/testRemo*.js"])
+    .src(["./Tests/*.js"])
     .browsers(['chrome'])
     .run();
 
