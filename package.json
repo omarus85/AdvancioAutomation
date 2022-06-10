@@ -1,0 +1,20 @@
+{
+  "name": "automationtest",
+  "version": "1.0.0",
+  "description": "Omar Valdez test",
+  "main": "mainRunner.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "TestCafe",
+    "Testing",
+    "Automation"
+  ],
+  "author": "Omar Aurelio Valdez Sánchez",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^1.19.0"
+  },
+  "type": "module"
+}
