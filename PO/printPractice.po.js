@@ -7,6 +7,8 @@ class gridPracticePage {
 
         this.resultSearch = Selector(".ac_results ul li")
             .withText("Summer Dresses > Printed Summer Dress");
+
+        this.categoryBar = Selector(".breadcrumb.clearfix");
     }
 
     typeSearchBox = async (text) => {
@@ -17,7 +19,9 @@ class gridPracticePage {
     selectSummerDress = async () => {
         await t.click(this.resultSearch);
     }
-
+    hoverCategoryBar = async() =>{
+        await t.hover(this.categoryBar);
+    }
 }
 
 export default new gridPracticePage()

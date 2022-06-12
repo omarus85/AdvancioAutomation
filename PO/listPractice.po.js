@@ -7,7 +7,9 @@ class listPracticePage {
             .child('li')
             .nth(1);
         this.listButton = Selector('#list');
-        this.addCartButton = Selector("[title='Add to cart']").nth(1)
+        this.addCartButton = Selector("[title='Add to cart']").nth(1);
+        this.addedCartLabel = Selector("#layer_cart_product_title");
+
 
     }
 
@@ -15,13 +17,14 @@ class listPracticePage {
         await t.hover(this.dressButton)
             .click(this.dressButton);
     }
-
     clickButtonList = async () => {
         await t.click(this.listButton);
     }
-
     clickButtonAddCart = async () => {
         await t.click(this.addCartButton);
+    }
+    hoverAddCartLabel = async() =>{
+        await t.hover(this.addedCartLabel);
     }
 }
 

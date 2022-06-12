@@ -10,5 +10,6 @@ test('Grid page test', async t =>{
     await gridPracticePage.clickButtonDress();
     await gridPracticePage.clickButtonGrid();
     await gridPracticePage.clickButtonAddCart();
+    await gridPracticePage.hoverAddCartLabel();
     await t.debug();
 })

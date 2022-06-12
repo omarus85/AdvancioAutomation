@@ -17,5 +17,6 @@ test('empty page test', async t => {
 
     await removeShoppingPracticePage.hoverButtonCart();
     await removeShoppingPracticePage.removeButtonCart();
+    await removeShoppingPracticePage.hoverButtonCart();
     await t.debug();
 })

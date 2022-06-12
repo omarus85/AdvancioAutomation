@@ -10,5 +10,6 @@ test('List page test', async t =>{
     await listPracticePage.clickButtonDress();
     await listPracticePage.clickButtonList();
     await listPracticePage.clickButtonAddCart();
+    await listPracticePage.hoverAddCartLabel();
     await t.debug();
 })

@@ -9,5 +9,6 @@ test('print page test', async t =>{
     await t.navigateTo('http://automationpractice.com/')
     await printPracticePage.typeSearchBox('printed');
     await printPracticePage.selectSummerDress();
+    await printPracticePage.hoverCategoryBar();
     await t.debug();
 })

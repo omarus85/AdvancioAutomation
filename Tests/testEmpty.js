@@ -8,5 +8,6 @@ fixture `Main page`
 test('empty page test', async t =>{
     await t.navigateTo('http://automationpractice.com/')
     await emptyPracticePage.clickButtonCart();
+    await emptyPracticePage.hoverAlertMessage();
     await t.debug();
 })

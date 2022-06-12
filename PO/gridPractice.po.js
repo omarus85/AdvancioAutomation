@@ -9,8 +9,9 @@ class gridPracticePage {
 
         this.gridButton = Selector('#grid');
 
-
         this.addCartButton = Selector("[title='Add to cart']").nth(1);
+
+        this.addedCartLabel = Selector("#layer_cart_product_title");
 
     }
 
@@ -26,6 +27,10 @@ class gridPracticePage {
     clickButtonAddCart = async () => {
         await t.hover(this.addCartButton)
             .click(this.addCartButton);
+    }
+
+    hoverAddCartLabel = async() =>{
+        await t.hover(this.addedCartLabel);
     }
 }
 
